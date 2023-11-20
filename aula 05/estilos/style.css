@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    color: white;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+body div {
+    /* efeito degradê */
+    background-image: linear-gradient(to bottom, #4D5ECA, #FFA64C, #C837AB);
+    height: 100vh;
+    width: 100%;
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* RAÍZ - VARIÁVEIS */
+:root {
+
+    --cor_principal: #3C15E6;
+    --cor_secundaria: #1473E6;
+
+}
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: red;
+}
+
+body,html {
+    background-color: white;
+    padding: 10px;
+}
+
+/* CONFIGURAÇÕES DA LISTA */
+li{
+    margin: 5px;
+}
+
+.lista1 li:nth-child(even) {
+    color: var(--cor_principal);
+}
+
+.lista1 li::before {
+    content: 'letra ';
+}
+
+/* CONFIGURAÇÕES DO BOTÃO */
+button.btn {
+    height: 50px;
+    width: 150px;
+
+    background-color: var(--cor_principal);
+    font-weight: bold;
+    color: white;
+
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+button.btn:hover {
+    background-color: var(--cor_secundaria);
+    cursor: pointer;
+}
+
+button.btn:active {
+    cursor: progress;
+}
+
+
+

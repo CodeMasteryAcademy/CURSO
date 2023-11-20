@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/* IMPORTAÇÕES - FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap'); 
+*/
+
+
+/* INVOCAÇÃO - FONTE IDROID */
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format('opentype');
+}
+
+/* RAÍZ DO ESTILO */
+:root {
+
+    /* CORES */
+    --cor_nivel_0: #c1fddb;
+    --cor_nivel_1: #62ffa6b2;
+    --cor_nivel_2: #42FF94;
+    --cor_nivel_3: #5ECC8E;
+    --cor_nivel_4: #018f3f;
+    --cor_nivel_5: #053D1D;
+
+    --cor_link_header: white;
+
+    --cor_fundo_main: white;
+    
+    --cor_fundo_header_aside: var(--cor_nivel_4);
+    --cor_fundo_content_aside: var(--cor_nivel_0);
+
+    --cor_fundo_footer: var(--cor_nivel_5);
+    --cor_fonte_footer: white;
+
+    --cor_sombra_nivel_1: rgba(0, 0, 0, 0.438);
+
+    /* FONTES */
+    --fonte_android: 'idroid', sans-serif;
+    --fonte_destaque: 'Bebas Neue', sans-serif;
+    --fonte_texto: arial, helvetica, sans-serif;
+
+}
+
+/* FORMATAÇÃO GERAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    font-family: var(--fonte_texto);
+}
+
+/* CONFIGURAÇÃO DO BODY */
+body {
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--cor_nivel_1);
+}
+
+/* CONFIGURAÇÃO GERAL DOS ITENS DO CABEÇALHO */
+header {
+    height: 170px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+
+    background-image: linear-gradient(to bottom, var(--cor_nivel_2), var(--cor_nivel_5));
+    color: white;
+    box-shadow: -2px 10px 30px var(--cor_sombra_nivel_1);
+}
+
+header > h1 {
+    font-size: 2.3em;
+    font-family: var(--fonte_destaque);
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 1px 1px 20px var(--cor_sombra_nivel_1);
+
+    margin: 10px 10px 18px 10px;
+}
+
+header > p {
+    font-size: 1.5ex;
+    font-weight: 300;
+    text-align: center;
+
+    max-width: 400px;
+    margin: auto;
+}
+
+header > nav {
+    max-width: 500px;
+    margin-top: 25px;
+}
+
+header > nav > a {
+    color: var(--cor_link_header);
+    text-decoration: none;
+    font-weight: bold;
+
+    margin: 0px 5px;
+    padding: 8px;
+
+    border-radius: 10px;
+}
+
+header > nav > a:hover {
+    background-color: #42ff946b;
+    transition-duration: .5s;
+}
+
+/* CONFIGURAÇÃO GERAL DOS ITENS DO CONTEÚDO PRINCIPAL */
+main {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 30px;
+
+    background-color: var(--cor_fundo_main);
+    box-shadow: 0px 4px 30px var(--cor_sombra_nivel_1);
+    border-radius: 0px 0px 20px 20px;
+}
+
+main picture {
+    margin: auto;
+}
+
+main picture > img, source {
+    width: 100%;
+}
+
+main > article > h2 {
+    font-family: var(--fonte_android);
+    color: var(--cor_nivel_4);
+}
+
+main > article > h3 {
+    padding: 2px 6px;
+    font-family: var(--fonte_android);
+
+    color: var(--cor_nivel_4);
+    background-image: linear-gradient(to right, var(--cor_nivel_0), transparent);
+}
+
+main > article > p {
+    margin: 20px 0px;
+
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main > article > p > a {
+    font-weight: bold;
+    color: var(--cor_nivel_4);
+    text-decoration: none;
+}
+
+main > article > p > a:hover {
+    text-decoration: underline;
+}
+
+main > article > p > a::after {
+    content: '🧷';
+}
+
+main > article > .img-box {
+    height: 200px;
+    max-width: 300px;
+
+    margin: 0px auto;
+}
+
+main strong {
+    color: var(--cor_nivel_4);
+}
+
+main > article > .iframe-box {
+    padding: 20px;
+    background-color: var(--cor_nivel_5);
+}
+
+main > article > .iframe-box > iframe {
+    width: 100%;
+    margin: auto;
+}
+
+main > aside {
+    margin: 20px 0px;
+}
+
+main > aside > .header-aside {
+    width: 100%;
+    padding: 10px;
+
+    color: white;
+    background-color: var(--cor_fundo_header_aside);
+    border-radius: 20px 20px 0px 0px;
+}
+
+main > aside > .content-aside {
+    width: 100%;
+    padding: 10px;
+
+    background-color: var(--cor_fundo_content_aside);
+    border-radius: 0px 0px 20px 20px;
+}
+
+main > aside > .content-aside > p {
+    margin: 10px 0px;
+
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main > aside > .content-aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0';
+    columns: 2;
+}
+
+/* CONFIGURAÇÃO GERAL DOS ITENS DO RODAPÉ */
+footer {
+    width: 100%;
+    padding: 8px;
+
+    color: var(--cor_fonte_footer);
+    background-color: var(--cor_fundo_footer);
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
