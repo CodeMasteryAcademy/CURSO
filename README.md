@@ -1,2 +1,4 @@
 # CURSO
- desenvolvimento web
+ Este o repositório para o curso de programação web da CodeMastery Academy
+ Empresa: CMA
+ Curso: Desenvolvimento Web
