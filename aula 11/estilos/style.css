@@ -1,1 +1,105 @@
 @charset "UTF-8";
+
+/* FONTES IMPORTADAS - GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap'); 
+
+
+:root {
+
+    --cor_fundo: white;
+    --cor_letras_header: white;
+    --cor_fundo_header: black;
+
+    --fonte_titulo: 'Passion One', sans-serif;
+    --fonte_letras_poema: 'Sriracha', cursive;
+    --fonte_padrao: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte_padrao);
+}
+
+header {
+    height: 80px;
+    padding: 20px;
+
+    color: var(--cor_letras_header);
+    background-color: var(--cor_fundo_header);
+}
+
+header > h1 {
+    margin-top: 10px;
+
+    font-family: var(--fonte_titulo);
+    text-align: center;
+}
+
+header > p {
+    font-family: var(--fonte_padrao);
+    text-align: center;
+}
+
+header > p > a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+    color: var(--cor_letras_header);
+    
+    transition-duration: .3s;
+}
+
+header > p > a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+main > .bg_default {
+    padding: 50px;
+}
+
+main > div > .poema {
+    font-size: 1.3em;
+    font-family: var(--fonte_letras_poema);
+}
+
+main > .bg_default > p {
+    height: 100%;
+    margin-top: 30px;
+}
+
+main > .bg_img {
+    padding: 150px 50px;
+
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+
+    box-shadow: inset 1px 10px 40px rgba(0, 0, 0, 0.384);
+}
+
+main > .bg_img > p {
+    max-width: 450px;
+    padding: 10px;
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+main > #bg_img1 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+main > #bg_img2 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    text-align: center;
+
+    color: white;
+    background-color: black;
+}
