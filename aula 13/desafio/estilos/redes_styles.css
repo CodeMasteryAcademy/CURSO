@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.btn_acesse {
+    margin: 0px;
+    padding: 10px;
+
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}

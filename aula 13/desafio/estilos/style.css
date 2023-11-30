@@ -19,6 +19,13 @@ body {
     position: relative;
 }
 
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 20px black;
+}
+
 .telefone {
     height: 395px;
     width: 190px;
@@ -52,3 +59,22 @@ iframe {
 
     left: 85%;
 }
+
+.redes_socias {
+    display: block;
+
+    height: 50px;
+    width: 50px;
+
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.redes_socias:hover {
+    transform: translate(-4px, -4px);
+    border: 2px solid white;
+    box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.377);
+
+    transition: transform .3s, box-shadow 1s, border 0s;
+}
+
