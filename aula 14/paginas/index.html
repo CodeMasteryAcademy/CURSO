@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
-    <!-- FORMULÁRIOS -->
-    <!-- FLEXBOXS -->
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
+    <section id="forms">
+        <!-- FORMULÁRIOS -->
+        <h2>Formulários</h2>
+
+        <form action="cadastro.php" method="get" autocomplete="off">
+            <label for="input_nome">Nome do evento:</label>
+            <input type="text" name="nome" id="input_nome">
+            <br>
+
+            <label for="input_sobrenome">Horário:</label>
+            <input type="time" name="sobrenome" id="input_sobrenome">
+            <br><br>
+
+            <p>Selecione o seu género: </p>
+            <input type="radio" name="genero" id="genero1">
+            <label for="genero1">Masculino</label>
+
+            <input type="radio" name="genero" id="genero2">
+            <label for="genero2">Femenino</label>
+            <br><br>
+
+            <input type="submit" value="Iniciar sessão">
+        </form>
+
+    </section>
+
+    <section id="flexbox">
+        <!-- FLEXBOXS -->
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+    </section>
 </body>
 </html>

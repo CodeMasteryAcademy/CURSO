@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+
+    /* FONTES */
+    --fonte_padrao: 'Open Sans', Arial, Helvetica, sans-serif;
+
+    /* CORES */
+    --cor_verde: #8BC63C;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte_padrao);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.377) url('../imagens/Pingo_Doce_logo.png') no-repeat center center;
+    background-size: cover;
+}
+
+body .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 200px;
+    width: 600px;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+body .container * {
+    margin: 5px 0px;
+}
+
+body .container p {
+    text-align: center;
+    max-width: 500px;
+}
+
+body .container form {
+    text-align: center;
+    width: 100%;
+}
+
+body .container form input {
+    padding: 10px;
+}
+
+body .container form input[type='email'] {
+    width: 50%;
+}
+
+body .container form input[type='submit'] {
+    background-color: var(--cor_verde);
+    border-color: var(--cor_verde);
+}
+

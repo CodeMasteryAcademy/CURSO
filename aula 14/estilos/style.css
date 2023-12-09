@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -11,16 +12,60 @@ body {
     width: 100%;
 }
 
-div {
+body > section > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+body #forms {
+    padding: 20px;
+    margin: 5px;
+
+    background-color: violet;
+    border-radius: 20px;
+}
+
+body #flexbox {
+    height: 300px;
+    padding: 0px;
+    margin: 5px;
+
+    background-color: skyblue;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+body #flexbox .container {
+    height: 100%;
+    width: 100%;
+    background-color: rebeccapurple;
+
+    /* mãe */
+    display: flex;
+
+    /* filho */
+    align-items: center; /* posicionamento vertical: start, center, end */
+    justify-content: center; /* posicionamento horizontal: start, center, end */
+    flex-direction: row-reverse; /* direcionamento das caixa: row, row-reverse, column, column reverse */
+    flex-wrap: wrap; /* quebra de linha: wrap, nowrap */
+
+}
+
+body #flexbox .box {
+    padding: 20px;
     height: 100px;
     width: 100px;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.363);
+
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 20px black;
 
     color: white;
-    background-color: gray;
-    border-radius: 10px;
-
-    cursor: pointer;
+    background-color: rgb(50, 50, 248);
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.418);
 }

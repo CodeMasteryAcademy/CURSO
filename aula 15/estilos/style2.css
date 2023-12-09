@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+
+    /* FONTES */
+    --fonte_padrao: 'Open Sans', Arial, Helvetica, sans-serif;
+
+    /* CORES */
+    --cor_verde: #8BC63C;
+
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte_padrao);
+}
+
+.container {
+    display: flex;
+
+    /* alinhamento vertical: 'strech', 'flex-start', 'flex-end', 'baseline', 'center' */
+    align-items: stretch;
+
+    /* alinhamento horizontal: 'space-evenly', 'space-around', 'space-between', 'flex-start', 'flex-end', 'center' */
+    justify-content: center;
+
+    /* direcionamento das caixas: 'row', 'row-reverse', 'column', 'column-reverse' */
+    flex-direction: row;
+
+    /* quebra de linha: 'wrap', 'nowrap' */
+    flex-wrap: wrap;
+
+    /* shorthand: <flex-direction>, <flex-wrap> */
+    flex-flow: row wrap;
+
+    
+    height: 500px;
+    background-color: skyblue;
+}
+
+.container .box {
+    padding: 20px;
+    margin: 5px;
+
+    background-color: violet;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+
+    /* shorthand para shrink, grow, basis */
+    flex: 1 1 100px;
+    
+    /* 
+    
+        flex-grow
+        flex-shrink
+        flex-basis
+        flex
+        order
+        align-self
+    
+    */
+
+}
+
+.container .box.b01 {
+    background-color: #3737ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container .box.b02 {
+
+}
+
+.container .box.b03 {
+
+}
+
+.container .box.b04 {
+    /* ordem da caixa */
+    order: -1;
+
+    /* alinhamento vertical particular: alinhamento vertical - mesmas propriedades */
+    align-self: flex-end;    
+
+    /* crescimento da caixa */
+    flex-grow: 10;
+
+    /* tamanho inicial da caixa: <valor> em px */
+    flex-basis: 250px;
+}

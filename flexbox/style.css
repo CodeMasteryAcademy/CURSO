@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+/* trabalhando com a mãe - container  */
+.container {
+    background-color: gray;
+    height: 500px;
+    display: flex;
+
+    /* FORMA LONGA */
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* FORMA CURTA */
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+/* trabalhando com os filhos - items */
+.item {
+    background-color: rgb(46, 43, 43);
+    color: white;
+    padding: 20px;
+    margin: 5px;
+
+    /* crescimento do item: vai ser 3 vezes mais */
+    flex-grow: 1;
+
+    /* largura inicial do item */
+    flex-basis: 300px;
+
+    /*  */
+    flex-shrink: 1;
+
+    /* 
+        shorthand para o flex basis, grow e shrink
+    
+        sintaxe: <grow> <shrink> <basis> 
+    */
+    flex: 1 1 300px;
+}
+
+
+.article-01 {
+    order: 2;
+}
+
+.article-02 {
+    order: 1;
+
+    /* crescimento do item: vai ser 3 vezes mais */
+    flex-grow: 1;
+
+    /* alinhamento vertical do item em particular */
+    align-self: flex-start;
+
+    /* largura inicial do item */
+    flex-basis: 200px;
+
+    /*  */
+    flex-shrink: 3;
+}
+
+.article-03 {
+    order: 4;
+}
+
+.article-04 {
+    order: 1;
+}
