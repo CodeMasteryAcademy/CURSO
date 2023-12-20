@@ -283,3 +283,124 @@ main > .section.s1 > .container_hero > img {
 
 /* SEÇÃO 3 - SECTION 3 */
 
+main .section.s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.section.s3 .side_top {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.section.s3 .side_top .info, .side_top .card_course {
+    height: 100%;
+    width: 50%;
+}
+
+.section.s3 .side_top .info {
+    padding-left: 10px;
+}
+
+.section.s3 .side_top .info h2 {
+    font-size: 3rem;
+}
+
+.section.s3 .side_top .info p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.side_bottom {
+    height: 500px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.side_bottom > * {
+    width: 24%;
+    margin: 5px;
+}
+
+/* ESTILOS DOS CARD COURSE */
+.section.s3 .card_course {
+    height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    background-color: #3F4273;
+    border-radius: 15px;
+}
+
+.section.s3 .card_course .header_card_course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;    
+    height: 50px;
+    padding: 15px;
+}
+
+.fa-html5 {
+    color: white;
+}
+
+.fa-css3-alt {
+    color: royalblue;
+}
+
+.fa-js {
+    color: yellow;
+}
+
+.fa-database {
+    color: royalblue;
+}
+
+.fa-git-alt {
+    color: rgb(255, 59, 59);
+}
+
+.fa-react {
+    color: #61DAFB;
+}
+
+.section.s3 .card_course .header_card_course span {
+    padding: 5px 10px;
+    width: 100px;
+
+    color: white;
+    text-transform: uppercase;
+
+    border-radius: 20px; 
+    background-color: var(--violeta_3);
+}
+
+.section.s3 .card_course .header_card_course .languages i {
+    font-size: 30px;
+}
+
+.section.s3 .card_course .main_card_course {
+    width: 100%;
+    height: 350px;
+}
+
+.section.s3 .card_course .footer_card_course {
+    width: 100%;
+    height: 50px;
+}
