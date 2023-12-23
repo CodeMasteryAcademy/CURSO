@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* importando fonte - ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* reset - configurações gerais */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #161516;
+}
+
+/* telefone */
+body .tel {
+    height: 600px;
+    width: 350px;
+    padding: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    color: white;
+    outline: 6px solid #333333;  
+    border-radius: 30px;
+    background-color: #000000;
+
+    transition: all .3s ease;
+
+    overflow: hidden;
+}
+
+body .tel > * {
+    width: 100%;
+}
+
+
+/* telefone - resultado */
+body .tel .result {
+    padding-right: 15px;
+    margin: 20px 0px;
+
+    text-align: right;
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+
+/* telefone - container dos botões */
+body .tel .container_buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    gap: 8px;
+}
+
+
+/* telefone - botões */
+body .tel .btn_clean {
+    text-align: left;
+    grid-column: 1 / span 2;
+}
+
+body .tel .btn_zero {
+    text-align: left;
+    grid-column: 1 / 3;
+}
+
+body .tel .container_buttons button {
+    padding: 20px;
+    font-size: 1.6em;
+    font-weight: 400;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: all 200ms ease;
+
+    overflow: hidden;
+}
+
+body .tel .container_buttons button:hover {
+    color: white;
+    opacity: 80%;
+}
+
+body .tel .container_buttons .bg_gray {
+    color: #909090;
+    background-color: #333333;
+}
+
+body .tel .container_buttons .bg_orange {
+    color: white;
+    background-color: #FD9D22;
+}
+
+@media (max-width: 450px) and (orientation: portrait) {
+    body .tel {
+        width: 100%;
+        height: 100vh;
+        outline: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+
+    body .tel {
+        width: 600px;
+        height: 350px;
+        padding: 15px;
+    } 
+
+    body .tel .result {
+        width: 100%;
+        height: 20%;
+    }
+
+    body .tel .container_buttons {
+        padding: 10px;
+        height: 80%;
+        justify-content: flex-end;
+        grid-template-columns: repeat(4, 35px);
+        grid-template-rows: repeat(5, 35px);
+    }
+
+    body .tel .container_buttons button {
+        padding: 0px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    body .tel .container_buttons .btn_clean, body .tel .container_buttons .btn_zero {
+        padding: 10px;
+    }
+
+}
