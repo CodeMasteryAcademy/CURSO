@@ -10,7 +10,6 @@
 }
 
 /* repeat, minmax */
-
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -34,17 +33,10 @@
     background-color: #ee82ee;
 }
 
-.container .b1 {
-    grid-column-start: 1;
-    grid-column-end: -1;
+.container .b1, .container .b3 {
+    grid-column: 1 / -1;
 }
 
 .container .b2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.container .b3 {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column: 2 / 4;
 }
