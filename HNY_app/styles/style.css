@@ -61,6 +61,7 @@ body {
 }
 
 .containerImg .shadow .msg img {
+    width: 100%;
     animation: maximizar 1s ease-in-out 300ms alternate infinite;
 }
 
