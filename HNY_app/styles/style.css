@@ -61,7 +61,8 @@ body {
 }
 
 .containerImg .shadow .msg img {
-    width: 100%;
+    width: 80%;
+    max-width: 500px;
     animation: maximizar 1s ease-in-out 300ms alternate infinite;
 }
 
@@ -82,11 +83,11 @@ body {
 
 @keyframes maximizar {
     to {
-        transform: translateY(40px);
+        transform: translateY(20px);
     }
 
     from {
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
 }
 
