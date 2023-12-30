@@ -76,6 +76,8 @@ body {
 }
 
 .containerImg .shadow .msg > audio {
+    width: 100%;
+    max-width: 300px;
     margin: 30px 0px;
 }
 
