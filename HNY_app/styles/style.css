@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -29,11 +29,12 @@ body {
 .containerImg .shadow {
     height: 100%;
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
     
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column nowrap;
 
     background-color: rgba(0, 0, 0, 0.315);
 }
@@ -77,6 +78,28 @@ body {
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 35px;
+
+    border-radius: 10px 10px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: white;
+}
+
+.footer * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: center;
 }
 
 
