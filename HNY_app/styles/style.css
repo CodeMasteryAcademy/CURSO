@@ -82,6 +82,7 @@ body {
 }
 
 .containerImg .shadow .sentenceList {
+    margin-top: 10px;
     display: grid;
     grid-row-gap: 10px;
 }
