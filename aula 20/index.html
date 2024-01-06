@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aula 20
+    </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            min-height: 60px;
+            color: white;
+            background-color: black;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-flow: column nowrap;
+        }
+
+        div.up {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 30px;
+            width: 100%;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        nav.show {
+            display: flex;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-flow: column nowrap;
+            background-color: gray;
+            overflow: hidden;
+        }
+
+        nav.hidden {
+            overflow: hidden;
+            height: 0px;
+        }
+
+        nav a {
+            color: white;
+            text-align: right;
+            width: 100%;
+            margin: 10px 0px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all .3s ease-in;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body onload="">
+    <header>
+        <div class="up"><h1>Logo</h1> <span id="btn" onclick="clique()">menu</span></div>
+        <nav class="menu hidden">
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <label for="select">Selecione a sua província</label>
+    <select name="select" id="select">
+        <option value="null" selected>-</option>
+        <optgroup label="Angola">
+            <option value="luanda">Luanda</option>
+            <option value="benguela">Benguela</option>
+            <option value="cuando_cubango">Cuando Cubango</option>
+        </optgroup>
+        <optgroup label="Portugal">
+            <option value="luanda">Lisboa</option>
+            <option value="benguela">Porto</option>
+            <option value="cuando_cubango">Alentejo</option>
+        </optgroup>
+    </select>
+    
+    <br>
+    <br>
+
+    <label for="textInput">Informe o seu cargo</label>
+    <input type="text" name="textInput" id="textInput" list="datalist">
+    <datalist id="datalist">
+        <option value="PROF">Professor</option>
+        <option value="ALN">Aluno</option>
+        <option value="FUNC">Funcionário</option>
+    </datalist>
+    <br><br><br>
+
+    <label for="textarea">Fale um pouquinho sobre você:</label>
+    <br>
+    <textarea name="textarea" id="textarea" rows="2" cols="20"></textarea>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const menu = document.querySelector('.menu');
+
+        function clique() {
+            if(menu.className == "show") {
+                menu.classList.remove('show');
+                menu.classList.add('hidden');
+            } else {
+                menu.classList.remove('hidden');
+                menu.classList.add('show');
+            }
+        }
+        
+    </script>
+</body>
+</html>
