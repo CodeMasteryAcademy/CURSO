@@ -61,14 +61,19 @@ header .containerFormSearchProduct {
 
 header .containerFormSearchProduct .formToSearchProduct {
     display: grid;
-    grid-template-columns: 1fr 30px;
-    grid-auto-rows: 30px;
+    grid-template-columns: 1fr 35px;
+    grid-auto-rows: 35px;
 
     align-items: center;
     justify-items: center;
 
     align-content: center;
     justify-content: center;
+
+    @media (max-width: 498px) {
+        grid-template-columns: 1fr 30px;
+        grid-auto-rows: 30px;
+    }
 }
 
 header .containerFormSearchProduct .formToSearchProduct input[type="text"] {
