@@ -11,6 +11,9 @@
     <!-- link para estilização geral - CSS -->
     <link rel="stylesheet" href="../styles/style-reset.css">
 
+    <!-- link para estilização do header e do footer - CSS -->
+    <link rel="stylesheet" href="../styles/style-header-and-footer.css">
+
     <!-- link para estilização individual  - CSS -->
     <link rel="stylesheet" href="../styles/style-home.css">
 
@@ -20,20 +23,31 @@
 </head>
 <body>
     <header>
-        <div class="leftSide">
-            <!-- menu -->
-            <i class="fa-solid fa-bars"></i>
-        </div>
         <div class="containerLogo">
-            Angola Calçados Online
+            <a href="home.html">A C O</a>
         </div>
-        <div class="rightSide">
+        <div class="containerFormSearchProduct">
+            <div class="formToSearchProduct">
+                <input type="text" name="inputSearchForm" id="inputSearchForm" placeholder="Nike Jordan">
+                <!-- lupa -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="others">
             <!-- message -->
             <i class="fa-solid fa-message"></i>
-            <!-- lupa -->
-            <i class="fa-solid fa-magnifying-glass"></i>
+
             <!-- sacola -->
-            <i class="fa-solid fa-bag-shopping"></i>
+            <span>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>0</span>
+            </span>
+
+            <!-- favoritos -->
+            <span>
+                <i class="fa-regular fa-heart"></i>
+                <span>0</span>
+            </span>
         </div>
         <nav class="navBar">
             <a href="#">Início</a>
@@ -259,7 +273,6 @@
                 <img src="../images/banner2.jpg" alt="banner">
             </section>
         </section>
-        
     </main>
     <footer>
 

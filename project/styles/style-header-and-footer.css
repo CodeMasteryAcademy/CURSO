@@ -1,0 +1,157 @@
+/* HEADER -------------------------------------->> */
+header {
+    padding: 5px 20px;
+    width: 100%;
+    min-height: 90px;
+
+    color: white;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 70px 3fr 1fr;
+    grid-template-rows: 1fr 30px;
+    grid-gap: 5px 20px;
+
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+header .containerLogo {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    align-self: center;
+    justify-self: start;
+    
+    overflow: hidden;
+
+    @media (max-width: 498px) {
+        grid-column: 1 / -1;
+
+        justify-self: center;
+        align-self: start;
+    }
+}
+
+header .containerLogo a {
+    color: white;
+    text-align: left;
+}
+
+header .containerFormSearchProduct {
+    width: 100%;
+
+    display: grid;
+    align-content: center;
+    justify-content: end;
+
+    @media (max-width: 498px) {
+        justify-content: start;
+        grid-column: 1 / -2;
+    }
+}
+
+header .containerFormSearchProduct .formToSearchProduct {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-auto-rows: 30px;
+
+    align-items: center;
+    justify-items: center;
+
+    align-content: center;
+    justify-content: center;
+}
+
+header .containerFormSearchProduct .formToSearchProduct input[type="text"] {
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.336);
+    color: white;
+    background-color: transparent;
+}
+
+header .containerFormSearchProduct .formToSearchProduct i {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: black;
+    background-color: white;
+}
+
+header .containerFormSearchProduct .formToSearchProduct i:hover {
+    opacity: 0.9;
+}
+
+header .others {
+    max-width: 120px;
+    justify-self: stretch;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30px);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+
+    align-items: center;
+    justify-items: center;
+
+    align-content: center;
+    justify-content: end;
+}
+
+header .others > * {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+header .navBar {
+    grid-column: 1 / -1;
+    justify-self: stretch;
+
+    display: flex;
+    align-items: center;
+
+    
+
+    @media (max-width: 498px) {
+        justify-content: center;
+    }
+}
+
+header .navBar a {
+    color: white;
+    font-weight: lighter;
+    margin: 0px 5px;
+
+    transition: all .3s ease-in;
+
+    @media(max-width: 498px) {
+        text-align: center;
+        font-size: .8rem;
+    }
+}
+
+header .navBar a:first-child {
+    margin-left: 0px;
+}
+
+header .navBar a:hover {
+    opacity: 0.8;
+}
+
