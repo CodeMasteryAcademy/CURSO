@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 1.1</title>
+    <script src="../js/script.js" defer></script>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+        }
+
+        .container {
+            margin: 20px 0px;
+            max-height: 300px;
+            width: 300px;
+            border-radius: 5px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 80px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: stretch;
+            background-color: white;
+        }
+        
+        .containerForm {
+            align-self: flex-start;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-auto-rows: 1fr;
+            gap: 10px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: start;
+        }
+        
+        .containerForm > * {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.233);
+        }
+
+        .btnsContainer {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: stretch;
+            grid-template-columns: repeat(auto-fit, 40px);
+            grid-auto-rows: 20px;
+            gap: 10px;
+        }
+        
+        .btnsContainer > * {
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #F0F0F0;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .btnsContainer > *:hover {
+            color: black;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="containerForm">
+            <input type="number" name="num1" id="num1" placeholder="valor 1">
+            <input type="number" name="num2" id="num2" placeholder="valor 2">
+            <span class="result">Resultado: 0</span>
+        </div>
+        <div class="btnsContainer">
+            <button onclick="operar('add')">+</button>
+            <button onclick="operar('mine')">-</button>
+            <button onclick="operar('times')">x</button>
+            <button onclick="operar('divide')">/</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -4,9 +4,6 @@
 
 */
 
-
-
-
 const somar = (a=0, b=0) => { return a + b };
 const subtrair = (a=0, b=0) => { return a - b };
 const multiplicar = (a=0, b=0) => { return a * b };
@@ -19,5 +16,3 @@ function operar(num1, num2, operacao) {
 const resultado = operar(5, 2, multiplicar);
 
 console.log(resultado);
-
-
